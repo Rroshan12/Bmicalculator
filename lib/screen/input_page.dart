@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../component/reusablecontainer.dart';
+import '../constant.dart';
 enum Gender{
   male,
   female
@@ -35,8 +36,8 @@ class _InputPageState extends State<InputPage> {
                   });
                 },
                     color: selectedGender == Gender.male
-                        ? Colors.red
-                        : Colors.yellow),
+                        ? kActiveCardColour
+                        : kInactiveCardColour),
               ),
               Expanded(
                 child: ReusableCards(color:Color(0xff1d1e33)),
@@ -71,7 +72,7 @@ class _InputPageState extends State<InputPage> {
             ),
           ),
 
-            height:80,
+            height:kBottomContainerHeight,
             width: double.infinity,
             margin:EdgeInsets.only(top:10),
     color: Color(0xffeb1555),
