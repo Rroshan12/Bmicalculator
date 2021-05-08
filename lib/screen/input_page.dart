@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'component/reusablecontainer.dart';
+import '../component/reusablecontainer.dart';
 enum Gender{
   male,
   female
